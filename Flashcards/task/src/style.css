@@ -1,0 +1,62 @@
+h1 {
+    font-family: 'Original Surfer', sans-serif, cursive;
+}
+
+p {
+    font-family: 'Original Surfer', sans-serif, cursive;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+}
+
+.main {
+    width: 990px;
+    margin: auto;
+    background: #aabbcc url('img/earth.jpg') no-repeat;
+
+}
+
+.quiz-block {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    min-width: 200px;
+    min-height: 200px;
+    background: #aabccb;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.back {
+    transition: all 0.3s ease;
+    visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front {
+    transition: all 0.3s ease;
+}
+
+.card:hover .back {
+    visibility: visible;
+    backface-visibility: visible;
+}
+.card:hover .front {
+    backface-visibility: hidden;
+}
+.card:hover {
+    /*transform: translate(20px, 10px) rotate(75deg) rotate3d(0, 1, 0, 180deg);*/
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.title {
+    text-align: center;
+    background: #f1f1f1;
+}
